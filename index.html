@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 플래너</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>나의 할 일</h1>
+
+        <form id="todo-form">
+            <input type="text" id="todo-text" placeholder="새 할 일 추가" required>
+            <input type="date" id="todo-date" required>
+            <select id="todo-priority">
+                <option value="low">낮음</option>
+                <option value="medium" selected>보통</option>
+                <option value="high">높음</option>
+            </select>
+            <button type="submit">추가</button>
+        </form>
+
+        <div class="filter-controls">
+            <button id="show-all">모든 할 일</button>
+            <button id="show-today">오늘 할 일</button>
+        </div>
+        
+        <ul id="todo-list">
+            <!-- 할 일 항목들이 여기에 동적으로 추가됩니다 -->
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
